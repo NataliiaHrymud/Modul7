@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @font-face {
+    font-family: 'Montserrate';
+    font-style: normal;
+    font-weight: 700;
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Montserrate';
+    font-style: normal;
+    font-weight: 400;
+    url('../fonts/montserrat-v14-latin-regular.woff') format('woff'),
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff'),
+    url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    url('../fonts/roboto-slab-v9-latin-700.woff') format('woff'),
+    url('../fonts/roboto-slab-v9-latin-700.woff2') format('woff2');
+  }
+
+  .container-fluid {
+    width: 1400px;
+    margin: auto;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .container {
+    width: 934px;
+    margin: 0 auto 15px auto;
+  }
+  
+  .logo {
+    display: block;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 490px;
+    min-height: 80px;
+  }
+  
+  .page-nav li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration-line: none;
+    color: #222222;
+  }
+  
+  a:hover {
+    font-size: 15px;
+    color: #fed136;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+
+  .services {
+    width: 934px;    
+    margin: auto;
+  }
+
+  .title1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 10px;
+    padding-top: 100px;
+  }
+  .title2 {
+    font-family: 'Montserrate', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #838383;
+    text-align: center;
+    margin: 10px auto 70px;
+  }
+
+  .name-service {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name-service-card {
+    width: 274px;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .ikons {
+    width: 68px;
+    height: 68px;
+    margin: 10px auto;
+  }
+  .service-name {
+    font-family: 'Montserrate', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222222;
+    margin: 15px auto;
+  }
+
+.black {
+  color: #222222;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.contact-infirmation {
+  background-image: url(../images/map.png);
+  width: 100%;
+  background-repeat : no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 934px;
+  height: auto;;
+  margin: auto;
+}
+
+.registation-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap-registation-form {
+  width: 456px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.registration-item {
+  width: 455px;
+  height: 50px;
+  margin: 15px;
+}
+
+.input-text {
+  height: 50px;
+  width: 455px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.textarea {
+  width: 456px;
+  height: 210px;
+  border-radius: 5px;
+  margin: 15px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-top: 20px;
+} 
+
+.button-send-message {
+  display: flex;
+  padding: 15px 0 115px;
+}
+
+.send-message {
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin: auto;
+  font-family: ;
+  font-size: 18px;
+}
+
+input[type="email"]:focus:invalid,
+textarea[name="body"]:focus:invalid,
+input[name="name"]:focus:invalid {
+outline-color: red;
+transition: outline-color 5s;
+}
+
+input[type="email"]:focus:valid,
+textarea[name="body"]:focus:valid,
+input[name="name"]:focus:valid {
+outline-color: green;
+transition: outline-color .4s;
+}
+
+.contact-input,
+.contact-textarea {
+box-sizing: border-box;
+margin: 14px 0;
+width: 455px;
+display: block;
+outline: 4px solid transparent;
+outline-offset: -2px;
+transition: outline-color 0.1s;
+}
